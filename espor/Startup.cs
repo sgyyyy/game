@@ -1,3 +1,4 @@
+using AutoMapper;
 using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using espor.AutoMapper;
+using espor.EmailServices;
 
 namespace espor
 {
@@ -28,6 +31,21 @@ namespace espor
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("MsSqlConnection")).EnableSensitiveDataLogging());
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("MsSqlConnection")), ServiceLifetime.Transient);
 
+            services.AddScoped<DataAccessLayer.Abstract.IUnitOfWork, DataAccessLayer.Concrete.UnitOfWork>();
+            services.AddScoped<BusinessLayer.Abstract.IUnitOfWork, BusinessLayer.Concrete.UnitOfWork>();
+
+            services.AddAutoMapper(typeof(Mapping));
+
+            services.AddScoped<IEmailSender, SmtpEmailSender>(x =>
+                new SmtpEmailSender(
+                    Configuration["EmailSender:Host"],
+                    Configuration.GetValue<int>("EmailSender:Port"),
+                    Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+                    Configuration["EmailSender:UserName"],
+                    Configuration["EmailSender:Password"],
+                    Configuration["EmailSender:DisplayName"]
+                )
+            );
 
 
             services.AddControllersWithViews();

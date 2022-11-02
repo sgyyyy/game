@@ -16,5 +16,6 @@ namespace DataAccessLayer.Concrete
         }
 
         public DbSet<Tournaments> Tournaments { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }

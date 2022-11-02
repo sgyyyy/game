@@ -1,143 +1,84 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IndexModel
 
 
-    <div class=banner id=layerSlider style="width: 100%;">
-        <div class=ls-slide data-ls="transition3d: 33,15; slidedelay: 8000 ; durationin:0;"><img
-                src=~/theme/images/banner/background01.jpg class=ls-bg alt="Slide backgr"ound>
+<div class=banner id=layerSlider style="width: 100%;">
+    <div class=ls-slide data-ls="transition3d: 33,15; slidedelay: 8000 ; durationin:0;">
+        <img src=~/theme/images/banner/background01.jpg class=ls-bg alt="Slide backgr" ound>
 
-            <div class="ls-l layercontent01" style="top: 50%; left: 50%; z-index:4;"
-                 data-ls="offsetxin:left; offsetxout:right; durationin: 4000; parallaxlevel: 8;"><img
-                    src=~/theme/images/banner/player.png alt=innerimage class=img-responsive
-                    style="max-width: 100% !important ;"></div>
-            <img src=~/theme/images/banner/ball.png alt=innerimage class="ls-l layercontent02" style=z-index:5;
-                 data-ls="offsetxin: right; offsetxout:left; rotatein:-360; easingin: easeoutquart; durationin: 4000; delayin: 250; parallaxlevel: -5;">
-            
-            <img src=~/theme/images/banner/front_particles.png alt=particles class=ls-l style="z-index:3; left:0;"
-                 data-ls="offsetxin: left; offsetxout:left; scalexin:50; easingin: easeoutquart; durationin: 3000; delayin: 250;">
-            <img src=~/theme/images/banner/back_particles.png alt=particles class=ls-l style="z-index:3; left:50%;"
-                 data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
+        <div class="ls-l layercontent01" style="top: 50%; left: 50%; z-index:4;"
+             data-ls="offsetxin:left; offsetxout:right; durationin: 4000; parallaxlevel: 8;">
+            <img src=~/theme/images/banner/player.png alt=innerimage class=img-responsive
+                 style="max-width: 100% !important ;">
+        </div>
+        <img src=~/theme/images/banner/ball.png alt=innerimage class="ls-l layercontent02" style=z-index:5;
+             data-ls="offsetxin: right; offsetxout:left; rotatein:-360; easingin: easeoutquart; durationin: 4000; delayin: 250; parallaxlevel: -5;">
 
-            <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">
-                </h2>
+        <img src=~/theme/images/banner/front_particles.png alt=particles class=ls-l style="z-index:3; left:0;"
+             data-ls="offsetxin: left; offsetxout:left; scalexin:50; easingin: easeoutquart; durationin: 3000; delayin: 250;">
+        <img src=~/theme/images/banner/back_particles.png alt=particles class=ls-l style="z-index:3; left:50%;"
+             data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
 
-            <h2 class="ls-l bannertext01 italic01 layercontent04"
-                data-ls="offsetxin:left; scalexin:9; durationin: 4000;">W TREE GAMES</h2><h4
-                    class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">
-                Temmuz</h4>
+        <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">
+        </h2>
 
-            <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;"
-                data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">2022</sup></h2><h6
-                    class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">
-                TURNUVASI</h6></div>
+        <h2 class="ls-l bannertext01 italic01 layercontent04"
+            data-ls="offsetxin:left; scalexin:9; durationin: 4000;">
+            W TREE GAMES
+        </h2><h4 class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">
+            Temmuz
+        </h4>
+
+        <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;"
+            data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">
+            2022</sup>
+        </h2><h6 class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">
+            TURNUVASI
+        </h6>
     </div>
+</div>
 
 
-    
 
 
-    <section class="w3l-index2 py-5 club_history achivementwrapper bg-white">
-        <div class="container py-md-3">
-          <div class="header-section text-center mx-auto">
+
+<section class="w3l-index2 py-5 club_history achivementwrapper bg-white">
+    <div class="container py-md-3">
+        <div class="header-section text-center mx-auto">
             <h3>Turnuvalarımız</h3>
-          
-          </div>
 
-
-          <div class="row bottom_grids text-center">
-
-
-            <div class="col-lg-6 col-md-6 mt-5">
-              <div class="s-block">
-                <a href="/home/TournamentDetails/" class="d-block">
-                  <img src="~/theme/images/turnuvalar/zula.jpg" alt="" class="img-fluid" />
-                  <h3 class="my-3">Zula</h3>
-                  
-                </a>
-              </div>
-            </div>
-
-
-
-            <div class="col-lg-6 col-md-6 mt-5">
-              <div class="s-block">
-                <a href="/home/TournamentDetails/" class="d-block">
-                  <img src="~/theme/images/turnuvalar/pubgmobile.jpg" alt="" class="img-fluid" />
-                  <h3 class="my-3">Pubg Mobile</h3>
-                  
-                </a>
-              </div>
-            </div>
-
-
-            <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/lol.jpg" alt="" class="img-fluid" />
-                    <h3 class="my-3">League of Legends</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/pes.jpg" alt="" class="img-fluid" />
-                    <h3 class="my-3">Pes 2022 </h3>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/pubg.jpg" alt="" class="img-fluid" />
-                    <h3 class="my-3">Pubg</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/valorant.jpg" alt="" class="img-fluid" />
-                    <h3 class="my-3">Valorant</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/csgo.png" alt="" class="img-fluid" />
-                    <h3 class="my-3">CS:GO</h3>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mt-5">
-                <div class="s-block">
-                  <a href="/home/TournamentDetails/" class="d-block">
-                    <img src="~/theme/images/turnuvalar/fifa22.png" alt="" class="img-fluid" />
-                    <h3 class="my-3">Fifa 2022</h3>
-                  </a>
-                </div>
-              </div>
-              
-
-          </div>
         </div>
-      </section>
 
 
-    <div class=banner-text>
-        <div class=container>
-            <div class=row>W TREE GAMES<sup></sup> Temmuz 2022 Turnuvası</div>
+        <div class="row bottom_grids text-center">
+            @foreach (var item in Model.Tournaments)
+            {
+
+                <div class="col-lg-6 col-md-6 mt-5">
+                    <div class="s-block">
+                        <a href="/home/TournamentDetails/@item.TournamentsId" class="d-block">
+                            <img src="@item.Image" alt="" class="img-fluid" />
+                            <h3 class="my-3">@item.Name</h3>
+                        </a>
+                    </div>
+                </div>
+
+
+            }
+
+
         </div>
     </div>
-  
+</section>
+
+
+<div class=banner-text>
+    <div class=container>
+        <div class=row>W TREE GAMES<sup></sup> Temmuz 2022 Turnuvası</div>
+    </div>
+</div>
 
 
 
@@ -148,392 +89,494 @@
 
 
 
-    
-    <section class=matchSchedule>
-        <div class=container>
-            <div class=row><h2 class=heading>Turnuva <span>Fikstürleri</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
-                    qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
-                    ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
-                    voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
-                    Est.</p>
 
-           
-                <div class="matchSchedule_details row">
-                    <div class=match_versus-wrap>
-                        <div class=wrap_match-innerdetails>
-                            <ul class="home_tInfo scrollable">
-                                <li><a href="#">
+<section class=matchSchedule>
+    <div class=container>
+        <div class=row>
+            <h2 class=heading>Turnuva <span>Fikstürleri</span></h2>
+
+            <p class=headParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
+                qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
+                ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+                voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
+                Est.
+            </p>
+
+
+            <div class="matchSchedule_details row">
+                <div class=match_versus-wrap>
+                    <div class=wrap_match-innerdetails>
+                        <ul class="home_tInfo scrollable">
+                            <li>
+                                <a href="#">
                                     <ul class="t_info match_info01 headline01 clearfix">
                                         <li>1</li>
                                         <li>
-                                            <div class="clearfix text-center"><span>FC Militant Flyers</span>
-                                                
+                                            <div class="clearfix text-center">
+                                                <span>FC Militant Flyers</span>
+
                                             </div>
 
-                                            <div class="paragraph02 clearfix"><span>August 24,2015</span>
-                                                <span>18.25pm</span></div>
+                                            <div class="paragraph02 clearfix">
+                                                <span>August 24,2015</span>
+                                                <span>18.25pm</span>
+                                            </div>
                                         </li>
                                     </ul>
-                                </a></li>
+                                </a>
+                            </li>
 
-                               
-                                <li><a href="#">
+
+                            <li>
+                                <a href="#">
                                     <ul class="t_info match_info01 headline01 clearfix">
                                         <li>2</li>
                                         <li>
-                                            <div class="clearfix text-center"><span>FC Militant Flyers</span>
-                                                
+                                            <div class="clearfix text-center">
+                                                <span>FC Militant Flyers</span>
+
                                             </div>
 
-                                            <div class="paragraph02 clearfix"><span>August 24,2015</span>
-                                                <span>18.25pm</span></div>
+                                            <div class="paragraph02 clearfix">
+                                                <span>August 24,2015</span>
+                                                <span>18.25pm</span>
+                                            </div>
                                         </li>
                                     </ul>
-                                </a></li>
+                                </a>
+                            </li>
 
-                                <li><a href="#">
+                            <li>
+                                <a href="#">
                                     <ul class="t_info match_info01 headline01 clearfix">
                                         <li>2</li>
                                         <li>
-                                            <div class="clearfix text-center"><span>FC Militant Flyers</span>
-                                                
+                                            <div class="clearfix text-center">
+                                                <span>FC Militant Flyers</span>
+
                                             </div>
 
-                                            <div class="paragraph02 clearfix"><span>August 24,2015</span>
-                                                <span>18.25pm</span></div>
+                                            <div class="paragraph02 clearfix">
+                                                <span>August 24,2015</span>
+                                                <span>18.25pm</span>
+                                            </div>
                                         </li>
                                     </ul>
-                                </a></li>
+                                </a>
+                            </li>
 
 
-                                <li><a href="#">
+                            <li>
+                                <a href="#">
                                     <ul class="t_info match_info01 headline01 clearfix">
                                         <li>2</li>
                                         <li>
-                                            <div class="clearfix text-center"><span>FC Militant Flyers</span>
-                                                
+                                            <div class="clearfix text-center">
+                                                <span>FC Militant Flyers</span>
+
                                             </div>
 
-                                            <div class="paragraph02 clearfix"><span>August 24,2015</span>
-                                                <span>18.25pm</span></div>
+                                            <div class="paragraph02 clearfix">
+                                                <span>August 24,2015</span>
+                                                <span>18.25pm</span>
+                                            </div>
                                         </li>
                                     </ul>
-                                </a></li>
-
-                                
-
-                              
-                                </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class=match_next>
-                        <div class="wrap_match_next left_triangle">
-                            <div class=left_padding><h4 class=headline03>Fikstürleri Belirli Turnuvalar</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                        </div>
-                    </div>
-                </div>
+                                </a>
+                            </li>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                
-            </div>
-        </div>
-    </section>
-
-
-
-
-   
-
-
-
-
-    <section class=latestvideo>
-        <div class=container>
-            <div class=row><h2 class=heading>Turnuvalardan <span>Anlar</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
-                    qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
-                    ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
-                    voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
-                    Est.</p>
-
-                <div class="video-wrap clearfix">
-                    <div class="video-content clearfix"><a class=btn-up></a>
-                        <ul class="videoLive clearfix" id=videoSlide role=tablist>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=YtXNB-0cFBo>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=yw3Cw5eG1wM>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
                             </a></li>
                         </ul>
-                        <a class=btn-down></a></div>
-                    <div class=video-show>
-                        <div class=video-container id=video01 data-current-video=W7qWa52k-nE>
-                            <iframe src=http://www.youtube.com/embed/W7qWa52k-nE class=liveVideo
-                                    allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class=match_next>
+                    <div class="wrap_match_next left_triangle">
+                        <div class=left_padding>
+                            <h4 class=headline03>Fikstürleri Belirli Turnuvalar</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-    </section>
-
-
-
-   
-
+    </div>
+</section>
 
 
 
 
-    <section class=gallery>
-        <div class=container>
-            <div class=row><h2 class=heading><span>Galerimiz</span></h2>
-                    <br>
+
+
+
+
+
+<section class=latestvideo>
+    <div class=container>
+        <div class=row>
+            <h2 class=heading>Turnuvalardan <span>Anlar</span></h2>
+
+            <p class=headParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
+                qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
+                ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+                voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
+                Est.
+            </p>
+
+            <div class="video-wrap clearfix">
+                <div class="video-content clearfix">
+                    <a class=btn-up></a>
+                    <ul class="videoLive clearfix" id=videoSlide role=tablist>
+                        <li>
+                            <a class=changeVideo data-yt-video=W7qWa52k-nE>
+                                <div>
+                                    <span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class=changeVideo data-yt-video=YtXNB-0cFBo>
+                                <div>
+                                    <span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class=changeVideo data-yt-video=W7qWa52k-nE>
+                                <div>
+                                    <span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class=changeVideo data-yt-video=yw3Cw5eG1wM>
+                                <div>
+                                    <span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class=changeVideo data-yt-video=W7qWa52k-nE>
+                                <div>
+                                    <span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class=btn-down></a>
                 </div>
-        </div>
-        <div class=galleryWrapper>
-            <div class=grid>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1176.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                         
-                            </div>
-                        </div>
+                <div class=video-show>
+                    <div class=video-container id=video01 data-current-video=W7qWa52k-nE>
+                        <iframe src=http://www.youtube.com/embed/W7qWa52k-nE class=liveVideo
+                                allowfullscreen=""></iframe>
                     </div>
                 </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1177.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1178.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1179.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1180.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1181.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1182.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                             
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1183.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1185.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/1E1A1188.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                     
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src="~/theme/images/seyfo/3D6A0174.JPG" alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap>
-                              
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=gutter></div>
             </div>
         </div>
-        <h1 class="btn btn-red">Daha Fazla</h1>
-    
-    </section>
+    </div>
+</section>
 
 
 
 
 
-    <section class=social-media>
-        <div class=container>
-            <div class=row>
-                <ul class=socialinfo>
-                    <li><a href="#">
+
+
+
+
+<section class=gallery>
+    <div class=container>
+        <div class=row>
+            <h2 class=heading><span>Galerimiz</span></h2>
+            <br>
+        </div>
+    </div>
+    <div class=galleryWrapper>
+        <div class=grid>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1176.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1177.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1178.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1179.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1180.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1181.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1182.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1183.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1185.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/1E1A1188.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=grid_item>
+                <div class=gallery_dtl>
+                    <img src="~/theme/images/seyfo/3D6A0174.JPG" alt=image>
+
+                    <div class=gallery_info>
+                        <div class=galleryinfo_wrap>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=gutter></div>
+        </div>
+    </div>
+    <h1 class="btn btn-red"><a href="/home/gallery">Daha Fazla</a></h1>
+
+</section>
+
+
+
+
+
+<section class=social-media>
+    <div class=container>
+        <div class=row>
+            <ul class=socialinfo>
+                <li>
+                    <a href="#">
                         <div class=sociallink><i class="fa fa-twitter"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
                             assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                    <li><a href="#">
+                            assumenda consectetur reiciendis hic obcaecati.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <div class=sociallink><i class="fa fa-instagram"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
                             assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                    <li><a href="#">
+                            assumenda consectetur reiciendis hic obcaecati.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <div class=sociallink><i class="fab fa-twitch"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
                             assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                            <li><a href="#">
-                                <div class=sociallink><i class="fab fa-youtube"></i></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
-                                    assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                                    assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                                    <li><a href="#">
-                                        <div class=sociallink><i class="fab fa-discord"></i></div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
-                                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                </ul>
-            </div>
+                            assumenda consectetur reiciendis hic obcaecati.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class=sociallink><i class="fab fa-youtube"></i></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
+                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
+                            assumenda consectetur reiciendis hic obcaecati.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class=sociallink><i class="fab fa-discord"></i></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
+                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
+                            assumenda consectetur reiciendis hic obcaecati.
+                        </p>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
 
-    <section class=awards>
-        <div class=container>
-            <div class=row><h2 class=heading>Öd<span>üller</span></h2>
+<section class=awards>
+    <div class=container>
+        <div class=row>
+            <h2 class=heading>Öd<span>üller</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
+            <p class=headParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
+                Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.
+            </p>
 
-                <div class="wrapper-container clearfix"><a class="prv awards_prev"></a> <a class="nxt awards_next"></a>
-                    <ul class="awards-wrap clearfix">
-                        <li><a href=achivement_details.html><img src=~/theme/images/awards/awards01.png alt=image>
+            <div class="wrapper-container clearfix">
+                <a class="prv awards_prev"></a> <a class="nxt awards_next"></a>
+                <ul class="awards-wrap clearfix">
+                    <li>
+                        <a href=achivement_details.html>
+                            <img src=~/theme/images/awards/awards01.png alt=image>
                             <ul class=awards-info>
                                 <li>League of Legends</li>
                                 <li>champion</li>
                             </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=~/theme/images/awards/awards02.png alt=image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=achivement_details.html>
+                            <img src=~/theme/images/awards/awards02.png alt=image>
                             <ul class=awards-info>
                                 <li>Fifa 22</li>
                                 <li>champion</li>
                             </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=~/theme/images/awards/awards03.png alt=image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=achivement_details.html>
+                            <img src=~/theme/images/awards/awards03.png alt=image>
                             <ul class=awards-info>
                                 <li>Pes 22</li>
                                 <li>champion</li>
                             </ul>
-                        </a></li>
-                        <li><a href=#><img src=~/theme/images/awards/awards04.png alt=image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=#>
+                            <img src=~/theme/images/awards/awards04.png alt=image>
                             <ul class=awards-info>
                                 <li>Pubg</li>
                                 <li>champion</li>
                             </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=~/theme/images/awards/awards02.png alt=image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=achivement_details.html>
+                            <img src=~/theme/images/awards/awards02.png alt=image>
                             <ul class=awards-info>
                                 <li>Zula</li>
                                 <li>champion</li>
                             </ul>
-                        </a></li>
-                    </ul>
-                </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
- 
+    </div>
+</section>
+
 
 

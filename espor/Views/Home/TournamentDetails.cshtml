@@ -1,79 +1,83 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Turnava Detayları";
 }
+@model TournamentsModel
 
-   
-    <section class=playerDpage>
-        <div class=container>
-            <div style="height: 100px;">
-            
-            </div>
-            <div class=row><h2 class=heading>Fifa 22 <span>Turnuva Detayları</span></h2>
-                    <br>
-                    <br>
-             
-                <div class="col-md-12" >
-                    <image src="/theme/images/turnuvalar/fifa22.png"></image>
-                </div>
-               
-              
-            </div>
+<section class=playerDpage>
+    <div class=container>
+        <div style="height: 100px;">
+
         </div>
-    </section>
+        <div class=row>
+            <h2 class=heading>@Model.Name <span>Turnuva Detayları</span></h2>
+            <br>
+            <br>
+
+            <div class="col-md-12">
+                <image src="@Model.Image"></image>
+            </div>
 
 
-    <section class=playerYear>
-        <div class=container>
-            <div class=row>
-                <ul class="yr_accordion clearfix">
-                    <li class=active><a href=#detailsGenel>Genel</a></li>
-                    <li><a href=#detailsKurallar>Kurallar</a></li>
-                    <li><a href=#detailsTurnuvayaKatıl>Turnuvaya Katıl</a></li>
-                </ul>
-                <div class="information-wrap clearfix">
+        </div>
+    </div>
+</section>
 
 
-                    <div role=tabpanel class="tab-pane information_section active" id=detailsGenel>
-
-                        <h1>Genel</h1>
-                       </div>
-
-
-
-                    <div role=tabpanel class="tab-pane information_section" id=detailsKurallar>
-                        <h1>Kurallar</h1>
-
-                    </div>
+<section class=playerYear>
+    <div class=container>
+        <div class=row>
+            <ul class="yr_accordion clearfix">
+                <li class=active><a href=#detailsGenel>Genel</a></li>
+                <li><a href=#detailsKurallar>Kurallar</a></li>
+                <li><a href=#detailsTurnuvayaKatıl>Turnuvaya Katıl</a></li>
+            </ul>
+            <div class="information-wrap clearfix">
 
 
-                    <div role=tabpanel class="tab-pane information_section" id=detailsTurnuvayaKatıl>
-                        <h1>Turnuvaya Katıl</h1>
+                <div role=tabpanel class="tab-pane information_section active" id=detailsGenel>
 
-                    </div>
+                    @Html.Raw(Model.Genel)
+                </div>
 
+
+
+                <div role=tabpanel class="tab-pane information_section" id=detailsKurallar>
+                    @Html.Raw(Model.Kurallar)
 
                 </div>
+
+
+                <div role=tabpanel class="tab-pane information_section" id=detailsTurnuvayaKatıl>
+                    <h1>Turnuvaya Katıl</h1>
+
+                </div>
+
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <section class=sponsors>
-        <div class=container>
-            <div class=row><h2 class=heading><span>Sponsorlarımız</span></h2>
+<section class=sponsors>
+    <div class=container>
+        <div class=row>
+            <h2 class=heading><span>Sponsorlarımız</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis earum
-                    reprehenderit quisquam, veritatis, qui libero velit consequatur alias assumenda corporis aut
-                    quibusdam, sint numquam voluptatem sapiente doloribus ipsum odit nihil!</p>
-                <ul class="client clearfix">
-                    <li><a href="#"><img src=/theme/images/client/client01.png alt=image></a></li>
-                    <li><a href="#"><img src=/theme/images/client/client02.png alt=image></a></li>
-                    <li><a href="#"><img src=/theme/images/client/client03.png alt=image></a></li>
-                    <li><a href="#"><img src=/theme/images/client/client04.png alt=image></a></li>
-                    <li><a href="#"><img src=/theme/images/client/client02.png alt=image></a></li>
-                    <li><a href="#"><img src=/theme/images/client/client05.png alt=image></a></li>
-                </ul>
-            </div>
+            <p class=headParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis earum
+                reprehenderit quisquam, veritatis, qui libero velit consequatur alias assumenda corporis aut
+                quibusdam, sint numquam voluptatem sapiente doloribus ipsum odit nihil!
+            </p>
+            <ul class="client clearfix">
+                <li><a href="#"><img src=/theme/images/client/client01.png alt=image></a></li>
+                <li><a href="#"><img src=/theme/images/client/client02.png alt=image></a></li>
+                <li><a href="#"><img src=/theme/images/client/client03.png alt=image></a></li>
+                <li><a href="#"><img src=/theme/images/client/client04.png alt=image></a></li>
+                <li><a href="#"><img src=/theme/images/client/client02.png alt=image></a></li>
+                <li><a href="#"><img src=/theme/images/client/client05.png alt=image></a></li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 

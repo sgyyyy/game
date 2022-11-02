@@ -1,4 +1,8 @@
-﻿using espor.Models;
+﻿using AutoMapper;
+using BusinessLayer.Abstract;
+using EntityLayer;
+using espor.EmailServices;
+using espor.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,15 +16,25 @@ namespace espor.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IEmailSender _emailSender;
+        private readonly IMapper _mapper;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork unitOfWork, IMapper mapper, IEmailSender emailSender)
         {
             _logger = logger;
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+            _emailSender = emailSender;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var model = new IndexModel()
+            {
+                Tournaments = _unitOfWork.Tournaments.GetAll()
+            };
+            return View(model);
         }
 
         public IActionResult Tournaments()
@@ -30,7 +44,18 @@ namespace espor.Controllers
 
         public IActionResult TournamentDetails(int id)
         {
-            return View();
+            if (id != 0)
+            {
+                var entity = _unitOfWork.Tournaments.GetById(id);
+
+
+                if (entity != null)
+                {
+                    var model = _mapper.Map<TournamentsModel>(entity);
+                    return View(model);
+                }
+            }
+            return NotFound();
         }
 
         public IActionResult Gallery()
@@ -40,12 +65,32 @@ namespace espor.Controllers
 
         public IActionResult Fixture()
         {
+            //var model = new IndexModel()
+            //{
+            //    Tournaments = _unitOfWork.Tournaments.GetAll()
+            //};
+            //return View(model);
             return View();
         }
 
         public IActionResult Contact()
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<bool> Contact(ContactModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                await _emailSender.SendEmailContactAsync(model.Email, model.Name, model.Subject, model.Message);
+
+                var entity = _mapper.Map<Contact>(model);
+
+                //_unitOfWork.Contacts.Create(entity);
+
+                return true;
+            }
+            return false;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

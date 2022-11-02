@@ -10,15 +10,15 @@ namespace BusinessLayer.Concrete
 {
     public class TournamentsManager : ITournamentsService
     {
-        private readonly DataLayer.Abstract.IUnitOfWork _unitOfWork;
-        public TournamentsManager(DataLayer.Abstract.IUnitOfWork unitOfWork)
+        private readonly DataAccessLayer.Abstract.IUnitOfWork _unitOfWork;
+        public TournamentsManager(DataAccessLayer.Abstract.IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
         public bool Create(Tournaments entity)
         {
-            var result = _unitOfWork.Tournamentss.Create(entity);
+            var result = _unitOfWork.Tournaments.Create(entity);
             if (result)
                 return true;
             return false;
@@ -26,7 +26,7 @@ namespace BusinessLayer.Concrete
 
         public bool Delete(Tournaments entity)
         {
-            var result = _unitOfWork.Tournamentss.Delete(entity);
+            var result = _unitOfWork.Tournaments.Delete(entity);
             if (result)
                 return true;
             return false;
@@ -34,17 +34,17 @@ namespace BusinessLayer.Concrete
 
         public List<Tournaments> GetAll()
         {
-            return _unitOfWork.Tournamentss.GetAll();
+            return _unitOfWork.Tournaments.GetAll();
         }
 
         public Tournaments GetById(int id)
         {
-            return _unitOfWork.Tournamentss.GetById(id);
+            return _unitOfWork.Tournaments.GetById(id);
         }
 
         public bool Update(Tournaments entity)
         {
-            var result = _unitOfWork.Tournamentss.Update(entity);
+            var result = _unitOfWork.Tournaments.Update(entity);
             if (result)
                 return true;
             return false;

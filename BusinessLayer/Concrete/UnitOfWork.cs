@@ -1,5 +1,4 @@
 ﻿using BusinessLayer.Abstract;
-using DataAccessLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +9,15 @@ namespace BusinessLayer.Concrete
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DataLayer.Abstract.IUnitOfWork unitOfWork;
-        public UnitOfWork(DataLayer.Abstract.IUnitOfWork unitOfWork)
+        private readonly DataAccessLayer.Abstract.IUnitOfWork _unitOfWork;
+        public UnitOfWork(DataAccessLayer.Abstract.IUnitOfWork unitOfWork)
         {
-            this.unitOfWork = unitOfWork;
+            this._unitOfWork = unitOfWork;
         }
 
         private TournamentsManager _tournamentsManager;
 
 
-        public ITournamentsService Tournaments => _tournamentsManager ??= new TournamentsManager(unitOfWork);
+        public ITournamentsService Tournaments => _tournamentsManager ??= new TournamentsManager(_unitOfWork);
     }
 }

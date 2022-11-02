@@ -15,6 +15,11 @@ namespace DataAccessLayer.Concrete
             _context = context;
         }
 
+        private EfCoreTournamentsRepository _tournamentsRepository;
+
+
+        public ITournamentsRepository  Tournaments => _tournamentsRepository ??= new EfCoreTournamentsRepository(_context);
+
         public void Dispose()
         {
             _context.Dispose();
@@ -24,10 +29,5 @@ namespace DataAccessLayer.Concrete
         {
             _context.SaveChanges();
         }
-
-        private EfCoreTournamentsRepository _tournamentsRepository;
-
-
-        public ITournamentsRepository  Tournaments => _tournamentsRepository ??= new EfCoreTournamentsRepository(_context);
     }
 }

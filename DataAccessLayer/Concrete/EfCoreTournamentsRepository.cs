@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class EfCoreTournamentsRepository<TEntity> : EfCoreGenericRepository<Tournaments>, ITournamentsRepository
-       where TEntity : class
+    public class EfCoreTournamentsRepository : EfCoreGenericRepository<Tournaments>, ITournamentsRepository
     {
         public EfCoreTournamentsRepository(Context context) : base(context)
         {
